@@ -10,7 +10,7 @@ function sharedConfig() {
         cucumberOpts: {
             compiler: "ts:ts-node/register",
             require: [
-                path.resolve(process.cwd(), './src/*.ts')
+              path.resolve(process.cwd(), './src/*.ts')
             ],
             format: 'pretty',
             tags: ''

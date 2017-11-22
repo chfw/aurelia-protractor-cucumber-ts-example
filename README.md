@@ -8,6 +8,7 @@ to test aurelia projects. Hope it provide guidances for like-minded people.
 
 ```shell
 $ npm install
+$ ./node_modules/.bin/webdriver-manager update
 $ npm test
 
 > aurelia-cucumber-typescript-example@1.0.0 test
@@ -25,8 +26,8 @@ Feature: Sample feature
 
   Scenario: Reading documentation
   ✔ Given I am on the aurelia js org web site
-  ✔ When I click on "select your role."
-  ✔ Then I should see "Are you a Web Dev?"
+  ✔ When I click on "Get Started"
+  ✔ Then I should see "Quick Start"
 
 1 scenario (1 passed)
 3 steps (3 passed)

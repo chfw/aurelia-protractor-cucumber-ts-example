@@ -6,5 +6,5 @@ Feature: Sample feature
 
   Scenario: Reading documentation
     Given I am on the aurelia js org web site
-    When I click on "select your role."
-    Then I should see "Are you a Web Dev?"
+    When I click on "Get Started"
+    Then I should see "Quick Start"

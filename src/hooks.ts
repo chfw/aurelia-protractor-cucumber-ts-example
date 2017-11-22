@@ -1,7 +1,8 @@
-import {defineSupportCode} from 'cucumber';
+import { defineSupportCode } from 'cucumber';
+import { browser } from 'aurelia-protractor-plugin/protractor';
 
-defineSupportCode(function({After}){
-	After(function(){
-		return this.driver.quit();
-	});
+defineSupportCode(({ After }) => {
+    After(() => {
+        return browser.quit();
+    });
 });
