@@ -15,17 +15,32 @@ function sharedConfig() {
             format: 'pretty',
             tags: ''
         },
-		capabilities: {
-			'browserName': 'chrome'
-		},
+        capabilities: {
+            'browserName': 'chrome',
+            'chromeOptions': {
+              'args': [
+                '--show-fps-counter',
+                '--no-default-browser-check',
+                '--no-first-run',
+                '--disable-default-apps',
+                '--disable-popup-blocking',
+                '--disable-translate',
+                '--disable-background-timer-throttling',
+                '--disable-renderer-backgrounding',
+                '--disable-device-discovery-notifications',
+                '--headless',
+                '--no-gpu'
+              ]
+            }
+        },
         specs: ['features/*.feature'],
 
         onPrepare: function () {
             // place something here
         },
-		plugins: [{
-			package: require.resolve('aurelia-protractor-plugin')
-		}],
+        plugins: [{
+            package: require.resolve('aurelia-protractor-plugin')
+        }],
 
         allScriptsTimeout: 11000,
         disableChecks: true,
