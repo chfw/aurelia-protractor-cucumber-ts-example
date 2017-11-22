@@ -1,5 +1,7 @@
 # Aurelia protractor cucumber typescript example
 
+[![Build Status](https://travis-ci.org/chfw/aurelia-protractor-cucumber-ts-example.svg?branch=master)](https://travis-ci.org/chfw/aurelia-protractor-cucumber-ts-example)
+
 This is an example project to demonstrate how to use protractor.js, cucumber.js and typescript
 to test aurelia projects. Hope it provide guidances for like-minded people.
 
